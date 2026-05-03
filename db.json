@@ -1,0 +1,84 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Akshat Hindolkar",
+      "email": "demo1@example.com",
+      "country": "USA",
+      "kycStatus": "verified",
+      "password": "password123"
+    },
+    {
+      "id": "Ts-Trir-sXY",
+      "name": "A D",
+      "email": "example1@gmail.com",
+      "country": "UK",
+      "password": "abcd1234",
+      "kycStatus": "pending"
+    },
+    {
+      "name": "Sheetal",
+      "email": "example2@gmail.com",
+      "password": "aceg1234",
+      "country": "USA",
+      "id": "_u7O5-SHkKw",
+      "kycStatus": "verified"
+    },
+    {
+      "name": "Priya",
+      "email": "pp@p1.com",
+      "password": "pg12345",
+      "country": "USA",
+      "id": "JS0roA-4kD4",
+      "kycStatus": "not_started"
+    }
+  ],
+  "properties": [
+    {
+      "id": "p1",
+      "title": "Central London Apartment",
+      "location": "London",
+      "price": 250000,
+      "yield": 6.5,
+      "images": ["./src/assets/images/property1.jpeg","./src/assets/images/property2.jpeg","./src/assets/images/property3.jpeg"],
+      "description": "Prime residential apartment in Central London."
+    },
+    {
+      "id": "p2",
+      "title": "Manchester Commercial Space",
+      "location": "Manchester",
+      "price": 180000,
+      "yield": 7.8,
+      "images": ["./src/assets/images/property1.jpeg","./src/assets/images/property2.jpeg","./src/assets/images/property3.jpeg"],
+      "description": "High-yield commercial property in Manchester."
+    },
+    {
+      "id": "p3",
+      "title": "Birmingham Family Home",
+      "location": "Birmingham",
+      "price": 150000,
+      "yield": 5.9,
+      "images": ["./src/assets/images/property1.jpeg","./src/assets/images/property2.jpeg","./src/assets/images/property3.jpeg"],
+      "description": "Affordable family home in a growing area."
+    },
+    {
+      "id": "p4",
+      "title": "Liverpool Waterfront Flat",
+      "location": "Liverpool",
+      "price": 200000,
+      "yield": 7.2,
+      "images": ["./src/assets/images/property1.jpeg","./src/assets/images/property2.jpeg","./src/assets/images/property3.jpeg"],
+      "description": "Waterfront apartment with strong rental demand."
+    },
+    {
+      "id": "p5",
+      "title": "Leeds Student Housing",
+      "location": "Leeds",
+      "price": 120000,
+      "yield": 8.1,
+      "images": ["./src/assets/images/property1.jpeg","./src/assets/images/property2.jpeg","./src/assets/images/property3.jpeg"],
+      "description": "Student housing with consistent occupancy."
+    }
+  ]
+  
+}
