@@ -21,35 +21,36 @@ Property Listing Page: Display of investment opportunities, property filters, an
 
 ## 📦 Installation
 
-1. **Clone the repo:**
+
   ```bash
+1. Clone the repo:
   git clone https://github.com/Akanksha-Deshpande/Asset_Platform.git
   cd Asset_Platform
 
-2. **Install dependencies::**
-  ```bash
+2. Install dependencies:
+  
   npm install
 
-3. **Run JSON-Server (For Mock APIs)::**
-  ```bash
+3. Run JSON-Server (For Mock APIs):
+  
   npm install -g json-server
   json-server --watch db.json --port 5000
   # (Do not kill this terminal)
 
-4. **Run the app::**
-  ```bash
+4. Run the app:
+
   npm run dev
   # (Run on another terminal)
 
-5. **Visit the application:**
-  ```bash
+5. Visit the application:
+  
   Go to http://localhost:5173 (or the URL provided by Vite) to see the app running.
 
-6. **Login Credentials Default:**
-  ```bash
+6. Login Credentials Default:
+  
   Email: example2@gmail.com
   Password: aceg1234 
-
+```
 
 ## Additional Notes:
 
