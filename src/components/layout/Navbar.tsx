@@ -23,7 +23,7 @@ const Navbar = () => {
         </NavLink>
 
         {/* Links */}
-        <div className="d-flex gap-3">
+        <div className="d-flex gap-4 bolder">
 
           <NavLink className="nav-link" to="/">
             Dashboard
