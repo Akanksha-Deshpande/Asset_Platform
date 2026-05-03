@@ -1,74 +1,54 @@
-# React + TypeScript + Vite
+# Asset Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project was created to build a core frontend experience covering investor onboarding and property listing, using a component-driven approach aligned with a shared Bootstrap-based design system.
 
-Currently, two official plugins are available:
+It is a regulated investment platform where users sign up, get verified, and browse investment opportunities. The platform is focused on the investor user (Phase 1) for now.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Technologies Used:
 
-## React Compiler
+React with Vite
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+TypeScript
 
-## Expanding the ESLint configuration
+Bootstrap
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+JSON Server (For Mock APIs)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Features:
+Onboarding Flow: Sign up, email/OTP verification, and login process.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Property Listing Page: Display of investment opportunities, property filters, and responsive property cards.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📦 Installation
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1. :***Clone the repo::***
+  ```bash
+  git clone https://github.com/Akanksha-Deshpande/Asset_Platform.git
+  cd Asset_Platform
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+2. :***Install dependencies::***
+  ```bash
+  npm install
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-# Asset_Platform
+3. :***Run JSON-Server (For Mock APIs)::***
+  ```bash
+  npm install -g json-server
+  json-server --watch db.json --port 5000
+  # (Do not kill this terminal)
+
+4. :***Run the app::***
+  ```bash
+  npm run dev
+  # (Run on another terminal)
+
+5. ***Visit the application:***
+  ```bash
+  Go to http://localhost:5173 (or the URL provided by Vite) to see the app running.
+
+# Additional Notes:
+
+Mock API: The backend is simulated using JSON Server with db.json. Any changes to the mock data should be made in this file. You can expand the dataset as needed for testing.
+
+Responsive Design: The app is fully responsive using Bootstrap. Check the layout on different screen sizes for optimal experience.
+
+### Next Steps: Future improvements can include pagination, lazy loading, and better handling of large datasets and white labeling.
